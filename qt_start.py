@@ -1,10 +1,10 @@
 import sys
 import random
-from PyQt5 import QtCore, QtWidgets, QtGui
-from PyQt5 import uic
-from PyQt5.QtWidgets import QMainWindow, QWidget
-import PyQt5.QtDesigner
-from out import Ui_Form
+from PySide2 import QtCore, QtWidgets, QtGui
+# from PyQt5 import uic
+from PySide2.QtWidgets import QMainWindow, QWidget
+# import pyside2uic.QtDesigner
+from color_ui import Ui_Form
 
 # color_set_form_class = uic.loadUiType("color_se1.ui")[0]
 #
