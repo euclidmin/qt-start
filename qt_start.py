@@ -1,7 +1,9 @@
 import sys
 import random
 from PySide2 import QtCore, QtWidgets, QtGui
-# from PyQt5 import uic
+from PySide2.QtUiTools import QUiLoader
+from PySide2.QtCore import QFile
+
 from PySide2.QtWidgets import QMainWindow, QWidget
 # import pyside2uic.QtDesigner
 from color_ui import Ui_Form
@@ -40,16 +42,19 @@ class ColorForm(QMainWindow, Ui_Form):
 
 
 if __name__=="__main__":
-    app = QtWidgets.QApplication([])
+    app = QtWidgets.QApplication(sys.argv)
 
-    # widget = MyWidget()
-    # widget.resize(800, 600)
-    # widget.show()
+    ui_file = QFile("sale.ui")
+    ui_file.open(QFile.ReadOnly)
+    loader = QUiLoader()
 
-    main_window = QWidget()
-    ui = Ui_Form()
+    main_window = loader.load(ui_file)
+    ui_file.close()
+
+    # main_window = QWidget()
+    # ui = Ui_Form()
     # ui = color_set_form_class
-    ui.setupUi(main_window)
+    # ui.setupUi(main_window)
     main_window.show()
     #
     # color_form = ColorForm()

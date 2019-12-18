@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>681</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QComboBox" name="comboBox_4">
+         <item>
+          <property name="text">
+           <string>제조사</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>다미끼</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>시마노</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>다이와</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>HDF</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_3"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_2"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="tableWidget">
+       <row>
+        <property name="text">
+         <string>새 열</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>새 열</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>새 열</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>새 열</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>새 열</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>새 열</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>새 열</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>제조사</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>카테고리</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>제품이름</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>무게</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>컬러</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>개수</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>시작</string>
+    </property>
+    <addaction name="actionfirst"/>
+    <addaction name="actionsecond"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionfirst">
+   <property name="text">
+    <string>first</string>
+   </property>
+  </action>
+  <action name="actionsecond">
+   <property name="text">
+    <string>second</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

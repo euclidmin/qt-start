@@ -41,6 +41,8 @@ def using_model():
 
     firstTableView.setModel(model)
     secondTableView.setModel(model)
+    secondTableView.setSelectionModel(firstTableView.selectionModel())
+    
 
 
     list.show()
